@@ -23,7 +23,22 @@ func main() {
 	fmt.Printf("Our cars starting price is %v \n",StartingPrice)
 	fmt.Println("take your pick")
 
-	name2:="zoro"
-	fmt.Printf("where are you from %v\n",name2)
-	fmt.Println("welcome")
+	includesInsurance:=false
+	fmt.Println("the insurance is",includesInsurance)
+
+
+	var name2 string
+	fmt.Println("name2",name2)
+
+	var number int
+	fmt.Println("number",number)
+
+	var price float64
+	fmt.Println("price",price)
+
+	var isActive bool
+	fmt.Println("isActive",isActive)
+
+	// more on strings
+	moreOnStrings()
 }
