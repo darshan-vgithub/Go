@@ -40,5 +40,6 @@ func main() {
 	fmt.Println("isActive",isActive)
 
 	// more on strings
+
 	moreOnStrings()
 }
