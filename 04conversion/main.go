@@ -26,4 +26,27 @@ func main() {
 		fmt.Println("Added 1 to your rating: ", numRating+1)
 	}
 
+
+
+	//practice
+	scanner := bufio.NewScanner(os.Stdin)
+
+    fmt.Print("Enter your name: ")
+    scanner.Scan()
+    name := scanner.Text()
+
+    fmt.Print("Enter your age: ")
+    scanner.Scan()
+    ageStr := scanner.Text()
+    age, err := strconv.Atoi(ageStr)
+    if err != nil {
+        fmt.Println("Invalid age. Please enter a number.")
+        return
+    }
+
+    fmt.Print("Enter your designation: ")
+    scanner.Scan()
+    designation := scanner.Text()
+
+    fmt.Printf("Hello, my name is %s, I am %d years old, and I am a %s.\n", name, age, designation)
 }
