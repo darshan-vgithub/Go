@@ -1,39 +1,15 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strconv"
+	"time"
 )
 
 func main() {
-	raeder := bufio.NewScanner(os.Stdin)
+	fmt.Println("Hello time study go language")
 
-	fmt.Println("Enter your name:")
-	raeder.Scan()
-	name := raeder.Text()
-	fmt.Println("Your name is", name)
-	fmt.Printf("the type of this variable is %T", name)
+	PresentTime := time.Now()
+	fmt.Println("present time is : ", PresentTime)
 
-	fmt.Println("Enter your age:")
-	raeder.Scan()
-	agestr := raeder.Text()
-
-	age, err := strconv.Atoi(agestr)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Println("Your age is", age) // Print the age variable instead of agestr
-	fmt.Printf("the type of this variable is %T", age,"\n")
-
-	fmt.Println("Enter your designation:")
-	raeder.Scan()
-	designation := raeder.Text()
-	fmt.Println("Your designation is", designation)
-	fmt.Printf("the type of this variable is %T", designation)
-
-	fmt.Printf("my name is %v and my age is %v and my designation is %v", name, age, designation)
+	fmt.Println(PresentTime.Format("Mon Jan 2 15:04:05 MST 2006"))
 }
