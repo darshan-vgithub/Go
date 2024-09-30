@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// these arrays are not much used in the go language but still there are some use cases for these also
 	fmt.Println("Welcome to arrays in golang")
 
 	var fruitlist [4]string
@@ -25,5 +26,25 @@ func main() {
 
 	fmt.Println("Fruit list is : ", fruitlist1)
 	fmt.Println("Length of fruit list is : ", len(fruitlist1))
+
+
+	var veitableList[4]string
+	
+	veitableList[0] = "Carrot"
+	veitableList[1] = "Beans"
+	veitableList[2] = "Potato"
+	veitableList[3] = "Onion"
+
+	fmt.Println("Vegetable list is : ", veitableList)
+	fmt.Println("Vegetable list is : ", len(veitableList))
+
+	var vegList[]string
+
+	vegList = append(vegList, "Carrot")
+	vegList = append(vegList, "Beans")
+	vegList = append(vegList, "Potato")
+
+	fmt.Println("Vegetable list is : ", vegList)
+	fmt.Println("Vegetable list is : ", len(vegList))
 
 }
